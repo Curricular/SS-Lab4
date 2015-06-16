@@ -1,0 +1,16 @@
+com.alibaba.rocketmq.client
+com.alibaba.rocketmq.client.admin
+com.alibaba.rocketmq.client.consumer
+com.alibaba.rocketmq.client.consumer.listener
+com.alibaba.rocketmq.client.consumer.rebalance
+com.alibaba.rocketmq.client.consumer.store
+com.alibaba.rocketmq.client.exception
+com.alibaba.rocketmq.client.hook
+com.alibaba.rocketmq.client.impl
+com.alibaba.rocketmq.client.impl.consumer
+com.alibaba.rocketmq.client.impl.factory
+com.alibaba.rocketmq.client.impl.producer
+com.alibaba.rocketmq.client.log
+com.alibaba.rocketmq.client.producer
+com.alibaba.rocketmq.client.producer.selector
+com.alibaba.rocketmq.client.stat
