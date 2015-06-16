@@ -1,9 +1,13 @@
 package cn.edu.fudan.se.bean;
 
+import com.alibaba.fastjson.JSON;
+
+import java.io.Serializable;
+
 /**
  * Created by Jimmy on 15/6/16.
  */
-public class CourseInfo {
+public class Course implements Serializable {
     private String courseId;
     private String schoolName;
     private String courseName;
@@ -12,6 +16,9 @@ public class CourseInfo {
     private String location;
     private Time time;
     private int capacity;
+
+    public Course() {
+    }
 
     public String getCourseId() {
         return courseId;
@@ -75,5 +82,10 @@ public class CourseInfo {
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
+    }
+
+    @Override
+    public String toString() {
+        return JSON.toJSONString(this);
     }
 }

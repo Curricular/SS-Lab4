@@ -1,9 +1,13 @@
 package cn.edu.fudan.se.bean;
 
+import com.alibaba.fastjson.JSON;
+
+import java.io.Serializable;
+
 /**
  * Created by Jimmy on 15/6/16.
  */
-public class Time {
+public class Time implements Serializable {
     private int weekday;
     private int period;
 
@@ -24,5 +28,10 @@ public class Time {
 
     public void setPeriod(int period) {
         this.period = period;
+    }
+
+    @Override
+    public String toString() {
+        return JSON.toJSONString(this);
     }
 }
